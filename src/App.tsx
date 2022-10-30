@@ -42,7 +42,7 @@ function App() {
               key={game.id}
               title={game.title}
               bannerUrl={game.bannerUrl}
-              adsCount={game._count.ads}
+              adsCount={game?._count?.ads ?? 0}
             />
           )
         })}
